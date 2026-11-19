@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DLCForge</title>
+<style>
+:root { --bg: #F4F5F8; --surface: #FFFFFF; --ink: #1B1D25; --muted: #565C6E; --line: #D9DCE5; --accent: #4B3FB0; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #15161C; --surface: #1E1F27; --ink: #E6E7EE; --muted: #9AA0B4; --line: #30333F; --accent: #B3A5FF; color-scheme: dark; } }
+:root[data-theme="dark"] { --bg: #15161C; --surface: #1E1F27; --ink: #E6E7EE; --muted: #9AA0B4; --line: #30333F; --accent: #B3A5FF; color-scheme: dark; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 "Segoe UI", system-ui, -apple-system, sans-serif; }
+main { max-width: 680px; margin: 0 auto; padding: 48px max(16px, env(safe-area-inset-left, 0px)) 64px max(16px, env(safe-area-inset-right, 0px)); display: grid; gap: 22px; }
+h1 { margin: 0; font-size: 34px; letter-spacing: -0.01em; }
+h2 { margin: 0 0 6px; font-size: 18px; }
+p { margin: 0; }
+.lead { color: var(--muted); font-size: 18px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; }
+ul { margin: 6px 0 0; padding-left: 20px; display: grid; gap: 6px; }
+a { color: var(--accent); }
+footer { color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>DLCForge</h1>
+  <p class="lead">The in-house tool Modifications by Eikmann uses to run its vehicle projects: jobs, quotes, deliveries and the business records behind them.</p>
+  <p>It runs on one Windows PC and is used only by the studio's owner. It isn't offered to anyone else.</p>
+  <div class="card">
+    <h2>Google services it uses, and why</h2>
+    <ul>
+      <li><b>Google Drive</b>: to keep locked backup copies of the studio's own records in the owner's own Drive, so they survive the loss of the PC. DLCForge can see only the files it made there.</li>
+      <li><b>Google Sheets</b>: to keep the owner's own business spreadsheet up to date.</li>
+    </ul>
+  </div>
+  <p><a href="privacy.html">Privacy policy</a></p>
+  <footer>© 2026 Modifications by Eikmann</footer>
+</main>
+</body>
+</html>
